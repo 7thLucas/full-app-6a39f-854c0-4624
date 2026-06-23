@@ -1,0 +1,28 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-content { width: 55%; }
+.mode-landscape .sl-visual { width: 45%; }
+.mode-portrait .sl-content { width: 100%; }
+.mode-portrait .sl-visual { width: 100%; height: 40%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+    <div class="sl-content flex flex-col justify-between p-12">
+      <div>
+        <span class="text-xs font-semibold tracking-widest uppercase text-slate-400">Landing Page</span>
+        <h1 class="text-7xl font-black text-slate-900 mt-6 leading-none">Hello<br/>Orias</h1>
+        <p class="text-lg text-slate-500 mt-6 max-w-xs leading-relaxed">One section. One message. Nothing more, nothing less.</p>
+        <div class="mt-8 w-12 h-1 bg-slate-900 rounded-full"></div>
+      </div>
+      <data-attribution />
+    </div>
+    <div class="sl-visual flex items-center justify-center overflow-hidden bg-slate-50">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=minimal+clean+white+room+single+bold+greeting+text+on+wall+elegant+typography+calm+editorial+photography"
+        class="w-full h-full object-cover"
+        alt="Hello Orias visual"
+      />
+    </div>
+  </div>
+</section>
